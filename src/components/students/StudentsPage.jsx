@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './StudentsPage.css';
 import StudentsTable from './StudentsTable';
 import { Link } from 'react-router-dom';
+import { DataContext } from '../routerFolder/NavigationRouters';
 
 const StudentsPage = () => {
+    const context = useContext(DataContext);
 
     return (
         <div className='students-page'>
@@ -18,7 +20,7 @@ const StudentsPage = () => {
             </div>
 
             <div>
-                <StudentsTable/>
+                {context.entries.length ? <StudentsTable/> : <h3>No data are there u need to click on add new student button to add details.</h3>}
             </div>
         </div>
     )
