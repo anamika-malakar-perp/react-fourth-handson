@@ -80,7 +80,7 @@ const StudentInfoEditPage = () => {
             </div>
 
             <div className='form-buttons'>
-                <Link to="/students"><button className='cancel-btn add-btn'>Cancel</button></Link>
+                <Link to="/students" className='cancel-btn'><button className='cancel-btn add-btn'>Cancel</button></Link>
                 <button className='add-btn' onClick={submitInfo}>{data.state === null ? 'Submit' : 'Update'}</button>
             </div>
         </div>

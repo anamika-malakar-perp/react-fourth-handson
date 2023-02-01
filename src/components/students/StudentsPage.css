@@ -88,3 +88,38 @@ tr {
     height: 65px;
     border-bottom: 1px solid #ccc !important;
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) { 
+
+    .add-student-form {
+        margin: 40px 20px 0 20px;
+        justify-content: unset;
+    }
+
+    .upper-form-control {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-floating {
+        width: unset;
+        margin: 0 0 30px 0;
+    }
+
+    .form-buttons {
+        align-self: center;
+    }
+
+    .cancel-btn {
+        margin-right: 10px;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+
+    .students-page {
+        margin: 20px 20px 0 20px;
+    }
+}
